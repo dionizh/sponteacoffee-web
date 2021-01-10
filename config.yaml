@@ -1,0 +1,152 @@
+baseURL: http://something-fresh.org/
+languageCode: en-us
+title: Hugo Fresh Theme
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy 
+  description: 
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logo.jpg
+    link: /
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Spontea Coffee
+    # Hero subtitle (optional)
+    subtitle: Have a spontaneous 5 minutes talk. Get connected with your coworkers. Because it's still about the people you work with.
+    # Button text
+    buttontext: Demo
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: illustrations/worker.svg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    clientlogos:
+    - hrhackathon.png
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  # - title: Features
+  #   url: /
+  # - title: Pricing
+  #   url: /
+  # - title: Dropdown
+  #   sublinks:
+  #   - title: Dropdown item
+  #     url: /
+  #   - title: Dropdown item
+  #     url: /
+  #   - title: Dropdown item
+  #     url: /
+  # - title: Log in
+  #   url: /
+  # - title: Sign up
+  #   url: /
+  #   button: true
+  # section1:
+  #   title: Great power comes
+  #   subtitle: with great responsibility
+  #   tiles:
+  #   - title: App builder
+  #     icon: mouse-globe
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Free trial
+  #   - title: Cloud integration
+  #     icon: laptop-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
+  #   - title: Add-ons & plugins
+  #     icon: plug-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
+  section2:
+    title: Tech for remote and distributed team
+    subtitle: Remote work is here to stay. Get ahead of the game.
+    features:
+    - title: Simulate the spontaneous conversations at the office.
+      text: Spontea Coffee simulates the physical cues we get while working in the office, similar to bumping into people or a quick desk or corridor conversation. At home it is easy to forget to take little breaks and people can be more reluctant to start a spontaneous conversation online.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: mobile-feed
+    - title: Get people connected. Build relationships and the sense of belonging.
+      text: Virtual relationship building can be a challenge. It's easy to underestimate the diminished human connection, team bonding, and the sense of belonging within the company in our remote world. We recognise the importance of all these.
+      icon: laptop-globe
+    - title: Morale + mental health + happiness = Productivity.
+      text: Studies proof that people need little breaks to get on track and boost their energy levels. Mental health and happiness are crucial to morale, productivity and longevity of workers. We are all humans after all, not robots.
+      icon: doc-sync
+  section3:
+    title: How It Works
+    subtitle: 
+    image: screenshot.png
+    buttonText: Get started
+    buttonLink: "#"
+  # section4:
+  #   title: Our Clients love us!
+  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+  #   clients:
+  #   - name: Irma Walters
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Accountant
+  #     img: 1
+  #   - name: John Bradley
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Financial Analyst
+  #     img: 2
+  #   - name: Gary Blackman
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: HR Manager
+  #     img: 3
+  # section5: true
+  footer:
+    # Logo (from /images/logos/___)
+    logo: logo.jpg
+    # Social Media Title
+    # socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    # socialmedia:
+    # - link: https://github.com/lucperkins/github-fresh
+    #   # Icons are from Font Awesome
+    #   icon: github
+    # - link: https://twitter.com/lucperkins
+    #   icon: twitter
+    bulmalogo: false
+    quicklinks:
+      column1:
+        title: "Around the Web"
+        links:
+        - text: Hackathon submission at Devpost
+          link: https://devpost.com/software/breakout-your-work
+      # column2:
+      #   title: "Docs"
+      #   links:
+      #   - text: Get started
+      #     link: /
+      #   - text: User guides
+      #     link: /
+      #   - text: Admin guide
+      #     link: /
+      #   - text: Developers
+      #     link: /
+      # column3:
+      #   title: "Blog"
+      #   links:
+      #   - text: Latest news
+      #     link: /blog/first
+      #   - text: Tech articles
+      #     link: /blog/second
