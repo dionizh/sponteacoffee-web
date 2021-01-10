@@ -1,6 +1,6 @@
-baseURL: http://something-fresh.org/
+baseURL: http://www.sponteacoffee.com
 languageCode: en-us
-title: Hugo Fresh Theme
+title: Spontea Coffee
 theme: hugo-fresh
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
 # Disables warnings
