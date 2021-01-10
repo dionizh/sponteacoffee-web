@@ -1,0 +1,43 @@
+{{- $section3   := .Site.Params.section3 }}
+{{- $title      := index $section3 "title" }}
+{{- $subtitle   := index $section3 "subtitle" }}
+{{- $image      := index $section3 "image" }}
+{{- $buttonText := index $section3 "buttontext" }}
+{{- $buttonLink := index $section3 "buttonlink" }}
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="has-text-centered">
+          <img class="pushed-image" src="{{ printf "/images/%s" $image | relURL }}">
+        </div>
+      </div>
+    </div>
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+      <div class="content-wrapper">
+        <ul>
+          <li>&#9632; Get a prompt for a chat at random times in the day
+          </li>
+          <li>&#9632; Or you can be proactive, and even jump into an ongoing conversation
+          </li>
+          <li>&#9632; The video call is limited to 5 minutes with the option to extend
+          </li>
+          <li>&#9632; You can be matched to one of your team mates, your favorite people, or a random person in the company
+          </li>
+          <li>&#9632; The settings allows you to block certain times of the day and set other things such as interests
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--p class="has-text-centered mt-20">
+      <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
+        {{ $buttonText }}
+      </a>
+    </p-->
+  </div>
+</section>
